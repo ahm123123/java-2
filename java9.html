@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+     function si()
+     {
+        var p=parseInt(document.getElementById("t1").value);
+        var r=parseInt(document.getElementById("t2").value);
+        var t=parseInt(document.getElementById("t3").value);
+        var si=(p*r*t)/100;
+        document.getElementById("t4").value=si;
+      }
+    
+    </script>
+   
+</head>
+<body>
+  
+        <table border="4" bgcolor="aliceblue" width="300" height="0">
+            <td style="text-align: center;"> <h3> <b> <i> <u> SIMPLE INTEREST </h3> <h1> <b> <i> <u> CALCULATOR </h1> </td>
+        </table>
+
+        <form>
+        <table bgcolor="cadetblue" border="4" width="300" height="300"> 
+            <th>Amount Principal : <input type="text" id="t1"> <br> <br>
+                Rate Of Interest : <input type="text" id="t2"> <br> <br>
+                Duration of Time : <input type="text" id="t3"> <br> <br>
+
+                <button type="button" onclick="si()">Calculate SI</button>
+                <button type="button" onclick="reset()">Reset</button> <br> <hr>
+
+                Simple Interest  : <input type="text" id="t4"> 
+            </th>   
+        </table>
+    </form>
+
+   
+</body>
+</html>
